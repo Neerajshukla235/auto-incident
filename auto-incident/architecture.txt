@@ -1,0 +1,45 @@
+┌──────────────────────────────────────┐
+│        Alert & Trigger Layer          │
+│  (Latency spike, error rate breach)   │
+└───────────────────┬──────────────────┘
+                    ▼
+┌──────────────────────────────────────┐
+│          Commander Agent              │
+│  • Incident triage                   │
+│  • Investigation planning            │
+│  • Agent orchestration               │
+│  • Decision making                   │
+└───────────┬─────────────┬────────────┘
+            │             │
+            ▼             ▼
+┌─────────────────┐  ┌─────────────────┐
+│   Logs Agent     │  │  Metrics Agent   │
+│ • Parse logs     │  │ • p99 latency    │
+│ • Stack traces  │  │ • CPU / Memory   │
+│ • Error patterns│  │ • Anomaly detect │
+└─────────────────┘  └─────────────────┘
+            │             │
+            └──────┬──────┘
+                   ▼
+        ┌─────────────────────────┐
+        │ Deploy Intelligence     │
+        │ Agent                   │
+        │ • CI/CD timeline        │
+        │ • Config changes        │
+        │ • “What changed?”       │
+        └─────────────────────────┘
+                   ▼
+┌──────────────────────────────────────┐
+│      Shared Incident Memory           │
+│  • Observations                       │
+│  • Evidence                           │
+│  • Hypotheses                         │
+│  • Confidence scores                 │
+└───────────────────┬──────────────────┘
+                    ▼
+┌──────────────────────────────────────┐
+│     Decision & Action Engine          │
+│  • Root Cause Analysis                │
+│  • Rollback recommendation            │
+│  • Automated RCA report               │
+└──────────────────────────────────────┘

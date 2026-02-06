@@ -1,0 +1,30 @@
+{
+  "latency_spike": {
+    "trigger_type": "latency_spike",
+    "service": "api-gateway",
+    "threshold": 1000,
+    "value": 2500
+  },
+  "error_rate": {
+    "trigger_type": "error_rate",
+    "service": "user-service",
+    "threshold": 0.05,
+    "value": 0.12
+  },
+  "prometheus_format": {
+    "alerts": [
+      {
+        "labels": {
+          "alertname": "HighLatency",
+          "service": "payment-service",
+          "severity": "critical"
+        },
+        "annotations": {
+          "summary": "p99 latency above 2s",
+          "threshold": "2000",
+          "value": "4500"
+        }
+      }
+    ]
+  }
+}
