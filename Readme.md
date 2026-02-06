@@ -29,7 +29,7 @@ Instead of reacting to alerts, the system **reasons about failures** using a str
 
 ## Agent Architecture
 
-### 🧠 Commander Agent (Orchestrator)
+### Commander Agent (Orchestrator)
 - Receives alerts and classifies incidents
 - Creates investigation plans
 - Orchestrates sub-agents
@@ -41,12 +41,12 @@ Instead of reacting to alerts, the system **reasons about failures** using a str
 - Identifies error patterns and stack traces
 - Extracts temporal correlations
 
-### 📊 Metrics Agent (Telemetry Analyst)
+### Metrics Agent (Telemetry Analyst)
 - Analyzes system performance metrics
 - Detects anomalies in latency, CPU, and memory
 - Infers downstream dependency issues
 
-### 🚀 Deploy Intelligence Agent (Historian)
+### Deploy Intelligence Agent (Historian)
 - Tracks CI/CD deployments and configuration changes
 - Correlates incidents with recent system changes
 - Identifies latent configuration bugs
@@ -56,7 +56,7 @@ The system generates a full Root Cause Analysis (RCA) and recommends an **immedi
 
 ---
 
-## 📄 Automated RCA Output
+## Automated RCA Output
 
 The system automatically generates a structured RCA report including:
 - Incident summary
